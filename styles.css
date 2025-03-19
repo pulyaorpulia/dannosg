@@ -63,6 +63,8 @@ body {
     justify-content: center;
     gap: 30px;
     margin-bottom: 40px;
+    position: relative;
+    z-index: 100; /* Linklar boshqa elementlar ostida qolmasligi uchun */
 }
 
 .btn {
@@ -76,6 +78,9 @@ body {
     font-family: 'Patrick Hand', sans-serif;
     font-size: 1.5rem;
     transition: transform 0.3s, background-color 0.3s;
+    cursor: pointer; /* Tugma bosiladigan ekanligini ko‘rsatadi */
+    position: relative; /* Tugma boshqa elementlar bilan muammo bo‘lmasligi uchun */
+    z-index: 101; /* Tugma eng yuqorida bo‘lishi uchun */
 }
 
 .btn:hover {
@@ -105,6 +110,8 @@ body {
     border-radius: 10px;
     display: inline-block;
     margin-bottom: 15px;
+    position: relative;
+    z-index: 101; /* Tugma boshqa elementlar ostida qolmasligi uchun */
 }
 
 .copy-btn {
@@ -117,11 +124,16 @@ body {
     font-size: 1.5rem;
     color: #fff;
     transition: transform 0.3s, background-color 0.3s;
+    position: relative;
+    z-index: 101; /* Tugma boshqa elementlar ostida qolmasligi uchun */
+
 }
 
 .copy-btn:hover {
     background-color: #00ffcc;
     transform: scale(1.1);
+    position: relative;
+    z-index: 101; /* Tugma boshqa elementlar ostida qolmasligi uchun */
 }
 
 /* Jamoa Bo'limi */
@@ -159,14 +171,14 @@ body {
 
 .member h3 {
     font-family: 'Comic Neue', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     color: #ff00ff;
     margin-bottom: 10px;
 }
 
 .member p {
     font-family: 'Patrick Hand', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /* Fon Rasmlari */
@@ -177,7 +189,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 0;
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .bg-image {
@@ -188,7 +200,7 @@ body {
     top: 5%;
     left: 5%;
     width: 35%;
-    animation: float 3s infinite ease-in-out;
+    animation: float 2s infinite ease-in-out;
 }
 
 .king {
