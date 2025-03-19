@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a1a, #2c003e); /* Chiroyli gradient fon */
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Sarlavha */
+.header h1 {
+    font-family: 'Comic Neue', sans-serif;
+    font-size: 5rem;
+    color: #00ffcc; /* Neon yashil */
+    text-shadow: 0 0 15px #00ffcc, 0 0 30px #ff00ff;
+    margin-bottom: 15px;
+    animation: glow 2s infinite alternate;
+}
+
+.tagline {
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 2rem;
+    color: #ff00ff; /* Neon pushti */
+    margin-bottom: 30px;
+}
+
+/* Ta'rif */
+.description {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    margin: 30px 0;
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 0 0 5px #ff00ff;
+    border: 2px solid #00ffcc;
+}
+
+/* Ijtimoiy Tarmoqlar */
+.links h2 {
+    font-family: 'Comic Neue', sans-serif;
+    font-size: 2.5rem;
+    color: #00ffcc;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    background-color: #ff00ff;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 1.5rem;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #00ffcc;
+    transform: scale(1.1);
+}
+
+.social-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.contract h3 {
+    font-family: 'Comic Neue', sans-serif;
+    font-size: 2rem;
+    color: #00ffcc;
+    margin-bottom: 15px;
+}
+
+#contract-address {
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.copy-btn {
+    background-color: #ff00ff;
+    border: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.copy-btn:hover {
+    background-color: #00ffcc;
+    transform: scale(1.1);
+}
+
+/* Jamoa Bo'limi */
+.team h2 {
+    font-family: 'Comic Neue', sans-serif;
+    font-size: 3rem;
+    color: #00ffcc;
+    margin-bottom: 20px;
+}
+
+.team p {
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.member {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.3s;
+    border: 2px solid #ff00ff;
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+.member h3 {
+    font-family: 'Comic Neue', sans-serif;
+    font-size: 1.8rem;
+    color: #ff00ff;
+    margin-bottom: 10px;
+}
+
+.member p {
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Fon Rasmlari */
+.background-images {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.bg-image {
+    position: absolute;
+}
+
+.banner {
+    top: 5%;
+    left: 5%;
+    width: 35%;
+    animation: float 3s infinite ease-in-out;
+}
+
+.king {
+    bottom: 5%;
+    right: 5%;
+    width: 30%;
+    animation: float 4s infinite ease-in-out;
+}
+
+/* Animatsiyalar */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #00ffcc, 0 0 20px #ff00ff;
+    }
+    to {
+        text-shadow: 0 0 20px #00ffcc, 0 0 40px #ff00ff;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
